@@ -27,17 +27,17 @@ const scene = new THREE.Scene()
 
 const parameters = {}
 
-parameters.count = 70000
-parameters.size = 0.01
-parameters.radius = 5
+parameters.count = 90000
+parameters.size = 0.001
+parameters.radius = 10
 parameters.branches = 8
-parameters.spin = 1
+parameters.spin = -0.5
 parameters.randomness = 0.3
-parameters.randomnessPower = 5
-parameters.stars = 9000
-parameters.starColor = '#1b3984'
-parameters.insideColor = '#ff6030'
-parameters.outsideColor = '#1b3984'
+parameters.randomnessPower = 3
+parameters.stars = 69000
+parameters.starColor = '#92959d'
+parameters.insideColor = '#ffffff'
+parameters.outsideColor = '#00114d'
 
 gui.add(parameters, 'count').min(100).max(100000).step(100).onChange(generateGalaxy).name('stars in galaxy')
 gui.add(parameters, 'stars').min(0).max(100000).step(100).onChange(generateBgStars).name('background stars')
